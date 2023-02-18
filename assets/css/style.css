@@ -84,7 +84,7 @@ html {
 }
 .my-website-img{
     height:400px;
-    background-image:url(/assets/img/background_parallax.jpg);
+    background-image:url(../img/background_parallax.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -196,7 +196,7 @@ html {
 /* img portfolio */
 .parallax-img-2{
     height:400px;
-    background: url(/assets/img/parallax2.jpg);
+    background: url(../img/parallax2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -204,7 +204,7 @@ html {
 }
 .parallax-img-3{
     height:400px;
-    background: url(/assets/img/parallax3.jpg);
+    background: url(../img/parallax3.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
