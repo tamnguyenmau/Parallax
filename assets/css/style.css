@@ -1,0 +1,340 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Lato', sans-serif;
+    color: #777;
+    line-height: 1.8;
+    overflow-x: hidden;
+    margin: auto;
+    scroll-behavior: smooth;
+}
+.icon{
+    padding-right: 3px;
+}
+.small-show-mobile{
+    display: none;
+}
+.poiter{
+    cursor: pointer;
+}
+.active{
+    background-color: #fff !important;
+    border-bottom: 1px solid #ccc;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+    position: relative;
+    animation-delay: 0.5s;
+    transition: 0.3s;
+    animation: menuFadeIn ease 0.4s;
+}
+.show{
+    display: none;
+}
+#main{  
+    overflow: hidden;
+}
+/* header */
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+/* navbar */
+.header__nav ul{
+    padding: 0;
+    display: inline-block;
+    }
+.header__nav ul li {
+    list-style-type: none;
+    margin-top:8px; 
+    position: relative;
+}
+.header__nav ul>li{
+    display: inline-block;
+}
+.header__nav ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #707070;
+    font-weight:bold;
+    padding: 22px 16px;
+
+}
+.header__nav ul li a:hover{
+    background-color: #ddd;
+    color:#000; 
+}
+/* search btn */
+.search-btn{
+    float: right;
+    padding:12px 20px;
+}
+.search-btn:hover{
+    background-color: #f44336;
+    color:#fff;
+}
+/* CONTENT */
+#content{
+    padding-top:64px;
+    color:#777;
+    width: 100%;
+}
+.my-website-img{
+    height:400px;
+    background-image:url(/assets/img/background_parallax.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    margin-top: -65px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* middle title */
+
+.middle_title{
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 14px;
+    color: #fff;
+}
+.middle_title span{
+    background-color: #000;
+    padding: 12px 24px;
+}
+.middle_title p{
+    font-size: 36px;
+    font-weight: 400;
+}
+#content .container{
+    max-width: 948px;
+    padding-top:64px;
+}
+/* content describe */
+.content__describe{
+    text-align: justify;
+}
+.content__describe .greating{
+    padding:32px 0;
+}
+.content__describe .greating .about-author{
+    text-align: center;
+    font-weight: bold;
+}
+.content__describe .greating .about-author img{
+    width: 90%;
+    opacity: 0.7;
+}
+.content__describe .greating .about-author img:hover{
+    opacity: 1;
+    transition: 0.3s;
+}
+/* content skill */
+.content__skill{
+}
+.content__skill p{
+    text-align: center;   
+    font-size: 18px;
+}
+.skill-about{
+
+}
+.skill-about span{
+    letter-spacing: 14px;
+}
+.skill-about__level{
+    width:100%;
+    background-color: #f1f1f1;
+    height:35px;
+    margin:15px 0;
+}
+.ninety-percen{
+    width:90%;
+    background-color: #616161;
+    height:100%;
+    color:#fff;
+    line-height: 35px;  
+}
+.eighty-five-percen{
+    width:85%;
+    background-color: #616161;
+    height:100%;
+    color:#fff;
+    line-height: 35px;  
+}
+.seventy-five-percen{
+    width:75%;
+    background-color: #616161;
+    height:100%;
+    color:#fff;
+    line-height: 35px;  
+}
+/* content quater */
+.content__center{
+    background-color: #616161;
+    color:#Fff;
+}
+.content__center .height-100{
+    height:100%;
+    padding: 32px;
+}
+.content__center h3{
+    font-weight: 400;
+}
+.content__quater{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+/* img portfolio */
+.parallax-img-2{
+    height:400px;
+    background: url(/assets/img/parallax2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+}
+.parallax-img-3{
+    height:400px;
+    background: url(/assets/img/parallax3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.75;
+    width:100%;
+}
+/* content middle */
+.content__middle{
+    padding: 64px 0;
+}
+.content__middle-describe {
+    text-align: center;
+
+}
+.content__middle-describe h3{
+    font-weight: 400;
+    color: #616161;
+    padding-bottom: 10px;
+}
+.content__middle-describe p{
+    padding-bottom: 10px;
+}
+/* gallery box */
+.gallery-box img{
+    width:100%;
+}
+.gallery-box img:hover{
+    opacity: 0.7;
+}
+.load-more{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.load-more p{
+    background-color: #eee;
+    color: #000;
+    width:15%;
+    padding: 12px 0;
+    text-align: center;
+}
+.load-more p:hover{
+    background-color: #ddd;
+}
+/* contact */
+.contact img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contact .content-flex-start {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    list-style-type: none;
+    font-size: 20px;
+}    
+.contact ul li i{
+    padding-right: 20px;
+}
+.contact ul li i:hover{
+    color: #000;
+}
+/* field */
+#field{
+    width: 100%;
+    padding: 8px;
+}
+#field-submit{
+    padding: 8px;
+    float: right;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+#field-submit:hover{
+    background-color: #ccc;
+    color: #000;
+    border: 2px solid #ccc;
+}
+/* footer */
+#footer{
+    background-color: #000;
+    height:300px;
+    opacity: 0.6;
+}
+.to-top {
+    display: flex;
+    justify-content: center;
+}
+.to-top a{
+    color: #616161;
+    text-decoration: none;
+}
+.to-top p{
+    margin-top: 100px;
+    padding:8px 12px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+.to-top p:hover{
+    background-color: #ccc;
+    color: #000;
+}
+#footer:hover {
+    opacity: 1;
+}
+.icon-social{
+    display: flex;
+    justify-content: center;
+    font-size: 24px;
+    color: #f1f1f1;
+}
+@keyframes menuFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-53px);
+    }
+    to {
+        opacity: 1;
+        transform:translateY(0);
+    }
+}
+/* BREAK POINT */
+    /* PC */
+    @media (min-width:1024px) {}
+    /* TABLET & MOBILE */
+    @media (max-width:1023px) {}
+    /* TABLET */
+    @media (min-width:740px) and (max-width:1023px) {
+    }
+    /* MOBILE */
+    @media (max-width:739px) {}
